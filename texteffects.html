@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effects</title>
+    <style>
+        .demo
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px dashed red;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        .demo1
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px groove red;
+            overflow: hidden;
+            text-overflow:ellipsis;
+
+        }
+        .demo2
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px ridge red;
+            overflow:visible;
+            
+        }
+        .demo3
+        {
+            white-space:nowrap;
+            width:100px;
+            border:1px inset rgb(89, 0, 255);
+            text-overflow:initial;
+            overflow: hidden;
+        }
+        .demo3:hover
+        {
+            overflow: visible;
+            width:300px;
+            border: 2px dotted red;
+            text-overflow:inherit;
+        }
+        .demo4
+        {
+            width:200px;
+            word-break:keep-all;
+            border:outset 1px black;
+            text-overflow:inherit;
+        }
+        .demo5
+        {
+            width:200px;
+            word-wrap: break-word;
+            border: 1px black;
+            text-overflow:initial;
+        }
+        .demo6
+        {
+            writing-mode: vertical-rl;
+            border-style: groove;
+        }
+        .pagination a
+        {
+            color:red;
+            font-size: 25px;
+            float:left;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .pagination
+        {
+            position:fixed;
+            display:inline-block;
+        }
+        
+        .demo11
+        {
+            position:static;
+            top:100px;
+            left:200px;
+            border:dotted red 2px;
+            width: 100px;
+            height: 20px;
+            word-wrap: break-word;
+        }
+        .demo12
+        {
+            position:absolute;
+            top:100px;
+            left:200px;
+            border:dotted red 2px;
+            width: 100px;
+            height: 20px;
+            word-wrap: break-word;
+        }
+        .relative
+        {
+            height: 200px;
+            width:500px;
+            border-style: groove;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="pagination">
+        <a href="Dlithe.jpg">dlithe</a>
+        <a href="css.jpg">CSS</a>
+        <a href="html.jpg">JS</a>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <p class="demo">Welcome to HTML and CSS Training</p>
+    <p class="demo1">Welcome to HTML and CSS Training</p>
+    <p class="demo2">Welcome to HTML and CSS Training</p>
+    <p class="demo3">Welcome to HTML and CSS Training</p>
+    <hr>
+    <p class="demo4">Welcome to HTML and CSS Training</p>
+    <p class="demo5">Welcome to HTML and CSS Training</p>
+    <p class="demo6">Welcome to HTML and CSS Training</p>
+    <br>
+   
+    
+    <div class="relative">
+        <p class="demo12">ABSOLUTE</p>
+    </div>   
+</body>
+</html>
